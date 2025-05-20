@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Berita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Input Berita</h2>
+            <form id="newsForm">
+                <label for="title">Judul Berita:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="author">Nama Penulis:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="summary">Cuplikan:</label>
+                <textarea id="summary" name="summary" required></textarea>
+
+                <label for="image">Unggah Gambar:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <label for="content">Isi Berita:</label>
+                <textarea id="content" name="content" required></textarea>
+
+                <button type="submit">Publikasikan Berita</button>
+            </form>
+
+            <div id="newsPreview"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
